@@ -4,11 +4,16 @@
     background-color:whitesmoke;
 }
 .about p{
-    text-align: justify;
+    text-align: center;
     text-justify: inter-word;
 }
 
 .about h1{
     border-bottom: 2px solid orange ;
     padding: 5px;
+}
+
+.about a{
+    font-weight: bold;
+    font-size:50px;
 }
