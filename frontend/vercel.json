@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://to-do-app-pink-eta.vercel.app/",
+      "permanent": true
+    }
+  ]
+}
