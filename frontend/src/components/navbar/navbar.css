@@ -1,0 +1,21 @@
+.userimg{
+    width: 30px;
+    height: 30px;
+}
+.navbar{
+    background-color:rgb(216, 206, 206) !important;
+}
+
+.navbar-brand{
+    color: orange !important;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.btn-nav{
+    border-radius: 5px;
+    font-weight: bold;
+}
+.btn-nav:hover{
+     box-shadow:rgba(0,0,0,0.35) 0px 5px 15px ;
+}

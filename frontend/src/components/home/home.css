@@ -1,0 +1,24 @@
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.home h1{
+    font-size: 60px;
+
+}
+.homebtn{
+    background-color:orange;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    padding: 5px;
+    color: white;
+}
+.homebtn:hover{
+    background-color:rgb(212, 142, 10) ;
+}
+.text{
+     color: orange;
+}
