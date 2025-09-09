@@ -14,7 +14,8 @@ const Navbar=()=>{
   const logout=()=>{
     sessionStorage.clear("id");
     dispatch(authActions.logout());
-    history("/signin");
+    history("/");
+    window.location.reload(true);
   }
   
     return(
