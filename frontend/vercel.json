@@ -1,9 +1,8 @@
 {
-  "redirects": [
+  "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "https://to-do-app-pink-eta.vercel.app/",
-      "permanent": true
+      "destination": "/index.html"
     }
   ]
 }
