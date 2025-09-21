@@ -1,6 +1,7 @@
 import express from 'express'
 export const router=express.Router();
 import userModel from '../models/user.js';
+import listModel from '../models/list.js';
 import bcrypt from 'bcryptjs';
 
 //sign-Up
@@ -54,3 +55,18 @@ router.post("/login",async(req,res)=>{
         res.status(400).json({ message:"An internal server error occurred."});
     }
 });
+
+router.delete("/deleteAcc/:id",async(req,res)=>{
+    const {id}=req.params;
+       try {
+       await listModel.deleteMany({ user: id });
+      await userModel.findByIdAndDelete(id);
+       res.status(200).json({message:"Account deleted"});
+       } catch (error) {
+    // 1. Log the actual error to your server's console
+    console.error("Error deleting account:", error);
+
+    // 2. Send a 500 Internal Server Error status code
+    res.status(500).json({ message: "An error occurred while deleting the account." });
+}
+})
